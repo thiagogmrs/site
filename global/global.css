@@ -1,0 +1,57 @@
+/*estilos gerais*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+body{
+    font-family: 'roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+:root{
+    --color-1: #fff;
+    --color-2: #ff5e00;
+    --color-3: #222;
+    --color-4: #DCDCDC;
+    --space-1: 0.625rem; /*10px*/
+    --space-2: 0.938rem; /*15px*/
+    --space-3: 1.25rem;  /*20px*/
+    --space-4: 1.563rem; /*25px*/
+    --space-5: 1.875rem; /*30px*/
+    --size-1: 0.313rem;  /*5px*/
+    --size-2: 0.625rem;  /*10px*/
+    --size-3: 0.938rem;  /*15px*/
+    --size-4: 1.25rem;   /*20px*/
+    --size-5: 1.563rem;  /*25px*/
+} 
+/*end*/
+
+.btn{
+    background: var(--color-2);
+    padding: var(--size-2);
+    display: inline-block;
+    color: var(--color-1);
+    border-radius: var(--size-1);
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 100vh 100vh;
+    min-height: 100vh;
+    background: var(--color-4);
+    gap: 0px 0px 0px 200px
+}
+

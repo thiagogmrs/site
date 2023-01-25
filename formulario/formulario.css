@@ -1,0 +1,17 @@
+.sessao-email{
+    padding: var(--size-3);
+    display: grid;
+    max-width: 1200px;
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: minmax(200px, 400px) 1fr;
+    background-color: #fff;
+}
+.formulario-container > h2{
+    text-align: center;
+}
+.form input[type="text"], 
+.form input[type="email"],
+.form textarea{
+    width: 100%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+       <main class="main-intro">
+           <div class="super-info">
+               <p>Seg / Sex - 12:30 ás 18:30</p>
+               <a href="tel:+555331990818">(53) 3199-0818</a>
+               <p>Dr.Amarante, 617, Centro, Pelotas - RS</p>
+           </div>
+           <header class="header-intro">
+             <div class="logo-intro">
+                 <img src="./img/logo.png" alt="logo-rodrigo">
+             </div>
+             <nav>
+                 <ul class="menu-intro">
+                    <li><a href="#email">E-mail</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="/">Localização</a></li>
+                 </ul>
+             </nav>
+           </header>
+           <div class="divisao-intro">
+              <div class="side-intro-1">
+                <div class="info-side-1">
+                    <h1>Despachante Rodrigo</h1>
+                    <p>Um escritório voltado para facilitar a vida de pessoas que necessitam de algum serviço junto ao <span>DETRAN.</span></p>
+                    <a href="/" class="btn"><span>+</span>Vantagens</a>
+                </div>
+              </div>
+              <div class="side-intro-2">
+                 <div class="side-intro-2-img">
+                    <img src="./img/rodrigo.png" alt="Rodrigo">
+                 </div>    
+             </div>   
+            </div>     
+        </main>
+
+     <section class="sessao-email" id="email">
+        <div class="formulario-container">
+            <h2 class="sessao-titulo">E-mail</h2>
+            <form action="/" method="post" class="form" id="form">
+                <div class="col-1">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="col-2">
+                    <label for="snome">Sobrenome:</label><br>
+                    <input type="text" id="snome" name="sobrenome">
+                </div>
+                <div class="col">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="mensagem">
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem"></textarea> 
+                </div>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+     </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
