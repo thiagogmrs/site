@@ -2,7 +2,10 @@
 @import url(./global/global.css);
 
 /*introducao*/
-@import url(./introducao/introcucao.css);
+@import url(./introducao/introducao.css);
 
 /*formulario*/
 @import url(./formulario/formulario.css);
+
+/*vantagens*/
+@import url(./vantagens/vantagens.css);

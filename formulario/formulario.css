@@ -1,17 +1,54 @@
 .sessao-email{
     padding: var(--size-3);
-    display: grid;
-    max-width: 1200px;
-    grid-column: 2;
-    grid-row: 2;
-    grid-template-columns: minmax(200px, 400px) 1fr;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:var(--size-2);
     background-color: #fff;
+    border-radius: 5px;
+    min-height: 90vh;
+    width: 90vw;
+}
+.formulario-container{
+    justify-self: center;
 }
 .formulario-container > h2{
     text-align: center;
+    margin-bottom: 10px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-1);
+}
+.label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.colfull{
+    grid-column: 1/-1;
+}
+.col-2-btn{
+    grid-column: 2;
+    justify-self: end;
 }
 .form input[type="text"], 
 .form input[type="email"],
 .form textarea{
     width: 100%;
+    padding: var(--size-2);
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    color: #222;
+}
+.form input[type="text"]:focus, 
+.form input[type="email"]:focus,
+.form textarea:focus{
+    border-color: var(--color-2);
+    box-shadow: 0 0 0 2px var(--color-2);
+}
+
+.formulario-ilustracao{
+    justify-self: center;
 }
