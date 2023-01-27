@@ -1,9 +1,7 @@
-.sessao-email{
+.email-contain{
     padding: var(--size-3);
     display: grid; 
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    align-items: center;
     gap:var(--size-2);
     background-color: #fff;
     border-radius: 5px;
@@ -15,12 +13,19 @@
     padding: 15px;
     text-align: center;
 }
-.formulario-container{
-    justify-self: center;
+.contain-titulo h2{
+    text-transform: lowercase;
+    color: var(--color-2);
 }
-.formulario-container > h2{
-    text-align: center;
-    margin-bottom: 10px;
+
+.form-contain{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    gap: var(--space-2);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 .form{
     display: grid;
@@ -48,7 +53,7 @@
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
-    background: #f5f5f5;
+    background: #f2f2f2;
     color: #222;
     font-family: 'roboto', sans-serif;
     font-size: 1rem;
@@ -59,8 +64,4 @@
     border-color: var(--color-2);
     box-shadow: 0 0 0 2px var(--color-2);
     background: var(--color-1);
-}
-
-.formulario-ilustracao{
-    justify-self: center;
 }

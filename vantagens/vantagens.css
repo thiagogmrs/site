@@ -4,4 +4,39 @@
     padding: var(--size-3);
     border-radius: var(--size-1);
     background: var(--color-1);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+
+}
+.vantagens-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    width: 100%;
+    max-width: 960px;
+    gap: var(--size-3);
+    margin: 0 auto;
+}
+.dl-contain{
+    display: grid;
+    gap: var(--space-1);
+}
+.dt-titulo{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+.dt-titulo::before{
+    content: '';
+    background: var(--color-2);
+    width: 14px;
+    height: 18px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.dd-bg{
+    background: #f2f2f2;
+    padding: var(--space-1);
 }

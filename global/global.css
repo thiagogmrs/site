@@ -14,15 +14,12 @@ a{
 html{
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'roboto', sans-serif;
-    background: var(--color-4);
-}
 img{
     max-width: 100%;
     display: block;
 }
 :root{
+    --font-primary: 'roboto', sans-serif;
     --color-1: #fff;
     --color-2: #ff5e00;
     --color-3: #222;
@@ -39,6 +36,10 @@ img{
     --size-4: 1.25rem;   /*20px*/
     --size-5: 1.563rem;  /*25px*/
 } 
+body{
+    font-family: var(--font-primary);
+    background: var(--color-4);
+}
 /*end*/
 /*contain principal*/
 #contain{
