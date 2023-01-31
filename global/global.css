@@ -39,6 +39,7 @@ img{
 body{
     font-family: var(--font-primary);
     background: var(--color-4);
+    color: #222;
 }
 /*end*/
 /*contain principal*/
@@ -46,6 +47,7 @@ body{
     display: grid;
     place-content: center;
     min-height: 100vh;
+    padding-bottom: 30px;
 }
 /*btn*/
 .btn{
