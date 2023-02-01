@@ -1,30 +1,17 @@
-/*email*/
-let formulario = document.querySelector('#email-ativar');
-
-formulario.addEventListener('click', show1);
-
-function show1(){
-    document.querySelector('.email-contain-out').classList.add('ds-grid');
-   }
-
-/*vantagens*/
-let vantagens = document.querySelector('#vantagens-ativar');
-vantagens.addEventListener('click', show2);
-   
- function show2(){
-    document.querySelector('.vantagens-contain-out').classList.add('ds-grid');
- }
-
- let depoimentos = document.querySelector('#depoimentos-ativar');
- depoimentos.addEventListener('click', show3);
-
- function show3 (){
-   document.querySelector('.depoimentos-contain-out').classList.add('ds-grid');
- }
-
-
 //back-to-top
- const btnTop = document.getElementById('back-to-top')
-   btnTop.addEventListener('click', ()=>{
-      window.scrollTo(0,0);
-   });
+const btnTop = document.getElementById('back-to-top')
+btnTop.addEventListener('click', ()=>{
+   window.scrollTo(0,0);
+});
+/*email*/
+const form = document.querySelector('.link1');
+form.addEventListener('click', function(){document.querySelector('.emailPage').classList.add('ds-grid')});
+
+//depoimentos
+const depoimentos = document.querySelector('.link2');
+depoimentos.addEventListener('click', function(){document.querySelector('.depoimentos').classList.add('ds-grid')});
+
+//vantagens
+const vantagens = document.querySelector('.link3');
+vantagens.addEventListener('click', function(){document.querySelector('.vantagensPage').classList.add('ds-grid')});
+

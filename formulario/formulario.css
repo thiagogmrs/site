@@ -1,5 +1,8 @@
-.email-contain-out{
+.emailPage{
     display: none;
+    place-content: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
 }
 .email-contain{
     padding: var(--size-3);

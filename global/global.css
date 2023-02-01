@@ -49,12 +49,6 @@ body{
     min-height: 100vh;
     padding-bottom: 30px;
 }
-.contain{
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    padding-bottom: 30px;
-}
 /*btn*/
 .btn{
     background: var(--color-2);
@@ -88,10 +82,10 @@ body{
 #back-to-top span{
     padding-top: 5px;
 }
-.ds-grid{
-    display: grid !important;
-}
 .detran{
     color: var(--color-2);
     font-weight: 700;
+}
+.ds-grid{
+    display: grid !important;   
 }

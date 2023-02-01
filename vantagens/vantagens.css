@@ -1,5 +1,8 @@
-.vantagens-contain-out{
+.vantagensPage{
     display: none;
+    place-content: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
 }
 .vantagens{
     min-height: 90vh;
