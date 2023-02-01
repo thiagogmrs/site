@@ -15,3 +15,16 @@ vantagens.addEventListener('click', show2);
     document.querySelector('.vantagens-contain-out').classList.add('ds-grid');
  }
 
+ let depoimentos = document.querySelector('#depoimentos-ativar');
+ depoimentos.addEventListener('click', show3);
+
+ function show3 (){
+   document.querySelector('.depoimentos-contain-out').classList.add('ds-grid');
+ }
+
+
+//back-to-top
+ const btnTop = document.getElementById('back-to-top')
+   btnTop.addEventListener('click', ()=>{
+      window.scrollTo(0,0);
+   });

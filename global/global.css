@@ -38,7 +38,7 @@ img{
 } 
 body{
     font-family: var(--font-primary);
-    background: var(--color-4);
+    background: #f5f5f5;
     color: #222;
 }
 /*end*/
@@ -91,6 +91,7 @@ body{
 .ds-grid{
     display: grid !important;
 }
-.ds-block{
-    display: block !important;
+.detran{
+    color: var(--color-2);
+    font-weight: 700;
 }
