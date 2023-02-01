@@ -5,7 +5,7 @@
     border-radius: var(--size-1);
     background: var(--color-1);
     display: grid;
-    grid-template-rows: auto 170px 1fr;
+    grid-template-rows: auto auto 1fr;
     gap:var(--size-2); 
 }
 .super-info{
