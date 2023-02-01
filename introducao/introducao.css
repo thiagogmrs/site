@@ -32,18 +32,28 @@
 .header-intro{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
     align-items: center;
     justify-content: space-between;
+    justify-content: center;
 }
 .menu-intro{
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-1);
+}
+@media (max-with: 400px){
+    .menu-intro{
+        gap: var(--space-3);
+    }
 }
 .menu-intro a{
     padding: var(--size-2);
     background-color: var(--color-2);
     border-radius: 5px;
     color: var(--color-1);
+    display: inline-block;
 }
 .menu-intro a:hover{
     background: var(--color-5);

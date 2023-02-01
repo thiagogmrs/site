@@ -49,6 +49,12 @@ body{
     min-height: 100vh;
     padding-bottom: 30px;
 }
+.contain{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
 /*btn*/
 .btn{
     background: var(--color-2);
@@ -64,5 +70,27 @@ body{
 .btn:hover{
     background: var(--color-5);
 }
-
-
+/*back-to-top*/
+#back-to-top{
+    width: 30px;
+    height: 30px;
+    background: var(--color-2);
+    color: var(--color-1);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: grid;
+    place-items: center;
+    font-size: var(--size-4);
+    cursor: pointer;
+    border-radius: 5px;
+}
+#back-to-top span{
+    padding-top: 5px;
+}
+.ds-grid{
+    display: grid !important;
+}
+.ds-block{
+    display: block !important;
+}

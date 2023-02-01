@@ -1,3 +1,6 @@
+.depoimentos-contain-out{
+    display: none;
+}
 .depoimentos-contain{
     background-color: #fff;
     border-radius: 5px;
@@ -61,5 +64,8 @@
     flex-direction: column;
     align-items: center;
     gap: var(--space-1);
-    height: 140px;
+    /* height: 140px; */
+}
+.card-info p{
+    height: 100px;
 }
