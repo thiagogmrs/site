@@ -1,0 +1,29 @@
+.whatsPage{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+.whats{
+    padding: var(--size-3);
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:var(--size-2);
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 90vh;
+    width: 90vw;
+}
+.whats-bg{
+    background: #ff5e00;
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.whats-info{
+    height: 380px;
+}
+.whats-info h2{
+    color: #fff;
+}

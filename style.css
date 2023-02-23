@@ -4,6 +4,9 @@
 /*introducao*/
 @import url(./introducao/introducao.css);
 
+/*whatsapp*/
+@import url(./whatsapp/whatsapp.css);
+
 /*formulario*/
 @import url(./formulario/formulario.css);
 
