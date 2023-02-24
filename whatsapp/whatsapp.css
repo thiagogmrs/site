@@ -7,7 +7,6 @@
 .whats{
     padding: var(--size-3);
     display: grid; 
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap:var(--size-2);
     background-color: #fff;
@@ -15,15 +14,108 @@
     min-height: 90vh;
     width: 90vw;
 }
-.whats-bg{
-    background: #ff5e00;
-    max-width: max-content;
-    padding: 10px;
+.whats-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.whats-img{
+    display: grid;
+    justify-items: end;
+}
+.whats-img img{
+    max-width: 600px;
+    box-shadow: 2px 2px 5px #d5d5d5, -2px -2px 5px #d5d5d5;
     border-radius: 10px;
 }
-.whats-info{
-    height: 380px;
+@media (max-width: 1200px){
+    .whats-img img{
+        max-width: 500px;
+    }
 }
-.whats-info h2{
-    color: #fff;
+.whats-info-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-family: var(--font-primary);
 }
+@media (max-width: 980px){
+    .whats-info-sub{
+        gap: 30px;
+    }
+}
+.whats-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+.whats-info-sub h1{
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.03;
+}
+@media (max-width: 1200px){
+    .whats-info-sub h1{
+        font-size: 2rem;
+    }
+}
+.whats-span{
+    padding: 10px;
+    max-width: max-content;
+    background: var(--color-3);
+    color: var(--color-1);
+    font-size: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+.whats-span::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 1px;
+    margin-left: 3px;
+}
+.whats-info-sub a{
+    display: grid;
+    grid-template-columns: auto 60px auto;
+    gap: 10px;
+    align-items: center;
+    max-width: max-content;
+    padding: 10px;
+    background: var(--color-2);
+    color: var(--color-1);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+.whats-info-sub a:hover{
+    background: var(--color-5);
+}
+.whats-info-sub img{
+    max-width: 30px;
+}
+.arrow-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    animation: seta 0.5s ease-in 0s infinite alternate;
+    position: absolute;
+    font-size: 2rem;
+}
+@keyframes seta {
+    from {
+      right: 10px;
+    }
+    to {
+      right: 20px;
+    }
+  }
