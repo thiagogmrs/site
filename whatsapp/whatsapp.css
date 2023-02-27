@@ -44,19 +44,36 @@
     align-items: end;
 }
 .whats-info{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
     max-width: 500px;
+    background: black;
+    justify-content: start;
+}
+@media (max-width: 440px){
+    .whats-info{
+        gap: 10px;
+    }
 }
 .whats-info > div h1{
     line-height: 1.3;
     color: var(--color-1);
 }
-@media (max-width: 950px){
-    .whats-info > div h1{
-        font-size: 1.5rem;
+@media (max-width: 1100px){
+    .whats-info{
+    grid-template-columns: 1fr;
+    align-items: center;
     }
+}
+@media (max-width: 1100px){
+.whats-info h1{
+    font-size: 1.5rem;
+} 
+@media (max-width: 950px){
+    .whats-info h1{
+        font-size: 1rem;
+    }
+}
 }
 .btn-whats{
     padding: 10px;
