@@ -20,7 +20,10 @@
 .whats-info{
     grid-column: 2;
     display: grid;
-    align-items: center;
+}
+.whats-text{
+    align-self: center;
+    
 }
 .whats-text h1{
     font-size: 2rem;
@@ -28,21 +31,26 @@
     display: flex;
     align-items: first baseline;
     gap: 10px;
-
+    text-transform: uppercase;
+    position: relative;
 }
 .whats h1::before{
     content: '';
-    width: 30px;
-    height: 10px;
+    width: 40px;
+    height: 15px;
     background: var(--color-1);
     display: block;
+    position: absolute;
     border-radius: 5px;
+    left: -50px;
+    top: 10px;
 }
 .btn-whats{
     display: grid;
     grid-template-columns: auto 60px auto;
     align-items: center;
     justify-self: start;
+    align-self: start;
     text-transform: uppercase;
     background: var(--color-1);
     padding: 10px;
