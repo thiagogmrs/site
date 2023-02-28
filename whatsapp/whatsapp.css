@@ -5,98 +5,57 @@
     padding-bottom: 30px;
 }
 .whats{
-    padding: var(--size-3);
-    display: grid; 
-    align-items: center;
-    gap:var(--size-2);
-    border-radius: 5px;
     min-height: 90vh;
     width: 90vw;
-    background-image: url(./img-bg-1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-@media (max-width: 1100px){
-    .whats{
-        background-image: url(./img-bg-2.svg);
-        background-position: center;
-    }
-}
-.whats-items{
+    border-radius: var(--size-1);
+    background: var(--color-2);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
+    grid-template-columns: 100px 1fr minmax(300px, 400px) 180px;
+    gap: 15px;
+    box-shadow: inset 0px 70px 0px 0px #fff, inset 0px -70px 0px 0px #fff;
 }
-@media (max-width: 1100px){
-    .whats-items{
-    grid-template-columns: 1fr;
-    align-items: center;
-    }
-}
-.side-2-whats{
-    display: grid;
-    justify-content: start;
-    align-items: end;
+.whats img{
+    border-radius: 10px;
 }
 .whats-info{
+    grid-column: 2;
     display: grid;
-    gap: 20px;
-    max-width: 500px;
+    align-items: center;
 }
-
-@media (max-width: 440px){
-    .whats-info{
-        gap: 10px;
-    }
-}
-.whats-info > div h1{
-    line-height: 1.3;
+.whats-text h1{
+    font-size: 2rem;
     color: var(--color-1);
+    display: flex;
+    align-items: first baseline;
+    gap: 10px;
+
 }
-@media (max-width: 1100px){
-    .whats-info{
-    grid-template-columns: 1fr;
-    align-items: center;
-    }
-}
-@media (max-width: 1100px){
-.whats-info h1{
-    font-size: 1.5rem;
-} 
-@media (max-width: 950px){
-    .whats-info h1{
-        font-size: 1.2rem;
-    }
-}
-}
-.btn-whats{
-    padding: 10px;
+.whats h1::before{
+    content: '';
+    width: 30px;
+    height: 10px;
     background: var(--color-1);
-    display: grid;
-    grid-template-columns: auto 50px auto;
-    align-items: center;
-    gap: 15px;
-    max-width: max-content;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--color-3);
+    display: block;
     border-radius: 5px;
 }
-.btn-whats:hover{
-    background: #f7f7f7;
-}
-.whats-icon{
-    max-width: 30px;
+.btn-whats{
+    display: grid;
+    grid-template-columns: auto 60px auto;
+    align-items: center;
+    justify-self: start;
+    text-transform: uppercase;
+    background: var(--color-1);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 .arrow-contain{
     position: relative;
     display: flex;
     align-items: center;
+}
+.whats-icon{
+    max-width: 30px;
 }
 .arrow{
     animation: seta 0.5s ease-in 0s infinite alternate;
